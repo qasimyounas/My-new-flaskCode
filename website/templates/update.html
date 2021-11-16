@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block title %}Update{% endblock %} {% block content
+%}
+<h1 align="center">Notes</h1>
+<form action="/update/{{up.id}}" method="POST">
+  <input name="note" id="note" class="form-control" value="{{up.data}}">
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Update Note</button>
+  </div>
+</form>
+{% endblock %}
